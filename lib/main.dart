@@ -1,6 +1,7 @@
 import 'package:bitirme/pages/home_screen.dart';
 import 'package:flex_color_scheme/flex_color_scheme.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 void main() {
@@ -12,7 +13,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       theme: FlexThemeData.light(
         scheme: FlexScheme.indigo,
@@ -48,7 +49,7 @@ class MyApp extends StatelessWidget {
         fontFamily: GoogleFonts.notoSans().fontFamily,
       ),
       themeMode: ThemeMode.system,
-      home: HomeScreen(),
+      home: const HomeScreen(),
     );
   }
 }

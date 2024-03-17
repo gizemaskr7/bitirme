@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
 class WatchChannelScreen extends StatefulWidget {
@@ -8,7 +9,7 @@ class WatchChannelScreen extends StatefulWidget {
   const WatchChannelScreen({super.key, required this.url});
 
   @override
-  _WatchChannelScreenState createState() => _WatchChannelScreenState();
+  State<WatchChannelScreen> createState() => _WatchChannelScreenState();
 }
 
 class _WatchChannelScreenState extends State<WatchChannelScreen> {
@@ -19,13 +20,25 @@ class _WatchChannelScreenState extends State<WatchChannelScreen> {
     controller= WebViewController()
       ..setJavaScriptMode(JavaScriptMode.unrestricted)
       ..loadRequest(Uri.parse(widget.url!));
+    SystemChrome.setPreferredOrientations([
+      DeviceOrientation.landscapeLeft,
+      DeviceOrientation.landscapeRight,
+    ]);
+  }
+  @override
+  void dispose() {
+    SystemChrome.setPreferredOrientations([
+      DeviceOrientation.portraitUp,
+      DeviceOrientation.portraitDown,
+    ]);
+    super.dispose();
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Canlı Yayın"),
+        title: const Text("Canlı Yayın"),
       ),
       body: WebViewWidget(
         controller: controller,
