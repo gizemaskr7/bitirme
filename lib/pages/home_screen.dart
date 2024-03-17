@@ -46,15 +46,105 @@ class _HomeScreenState extends State<HomeScreen> {
                   margin: const EdgeInsets.all(10),
                   child: Container(
                     padding: const EdgeInsets.all(24),
-                    child: Column(
+                    child: const Column(
                       children: [
                         Column(
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: [
-                            const FlutterLogo(),
+                            FlutterLogo(),
                             Padding(
-                              padding: const EdgeInsets.all(12.0),
-                              child: const Text("Kanal Adı",style: TextStyle(fontSize: 18),textAlign: TextAlign.center,),
+                              padding: EdgeInsets.all(12.0),
+                              child: Text("Kanal Adı",style: TextStyle(fontSize: 18),textAlign: TextAlign.center,),
+                            )
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
+                );
+              },
+            ),
+          ),
+          Row(
+            children: [
+              const Padding(
+                padding: EdgeInsets.all(8.0),
+                child: Text("Başlık Spor",style: TextStyle(fontSize: 24),),
+              ),
+              const Spacer(),
+              IconButton(
+                icon: const Icon(Icons.arrow_forward_ios),
+                onPressed: () {
+
+                },
+              )
+            ],
+          ),
+          const Divider(),
+          Expanded(
+            child: ListView.builder(
+              itemCount: 5,
+              scrollDirection: Axis.horizontal,
+              physics: const BouncingScrollPhysics(),
+              itemBuilder: (context, index) {
+                return Card(
+                  margin: const EdgeInsets.all(10),
+                  child: Container(
+                    padding: const EdgeInsets.all(24),
+                    child: const Column(
+                      children: [
+                        Column(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          children: [
+                            FlutterLogo(),
+                            Padding(
+                              padding: EdgeInsets.all(12.0),
+                              child: Text("Kanal Adı",style: TextStyle(fontSize: 18),textAlign: TextAlign.center,),
+                            )
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
+                );
+              },
+            ),
+          ),
+          Row(
+            children: [
+              const Padding(
+                padding: EdgeInsets.all(8.0),
+                child: Text("Başlık Spor",style: TextStyle(fontSize: 24),),
+              ),
+              const Spacer(),
+              IconButton(
+                icon: const Icon(Icons.arrow_forward_ios),
+                onPressed: () {
+
+                },
+              )
+            ],
+          ),
+          const Divider(),
+          Expanded(
+            child: ListView.builder(
+              itemCount: 5,
+              scrollDirection: Axis.horizontal,
+              physics: const BouncingScrollPhysics(),
+              itemBuilder: (context, index) {
+                return Card(
+                  margin: const EdgeInsets.all(10),
+                  child: Container(
+                    padding: const EdgeInsets.all(24),
+                    child: const Column(
+                      children: [
+                        Column(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          children: [
+                            FlutterLogo(),
+                            Padding(
+                              padding: EdgeInsets.all(12.0),
+                              child: Text("Kanal Adı",style: TextStyle(fontSize: 18),textAlign: TextAlign.center,),
                             )
                           ],
                         ),
