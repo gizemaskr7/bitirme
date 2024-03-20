@@ -1,6 +1,6 @@
 # Canlı TV İzleme
 
-![Screenshot_1710707069](https://github.com/gizemaskr7/bitirme/assets/101512095/4f564a0e-da3c-4acd-add0-f17e674d837f)
+![Screenshot_1710707069 (1)](https://github.com/gizemaskr7/bitirme/assets/101512095/0f8c33b9-8647-4295-9286-bbfd153e5387)
 
 ## Getting Started
 
