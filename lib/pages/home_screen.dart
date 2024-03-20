@@ -23,6 +23,7 @@ class HomeScreen extends StatelessWidget {
             _buildChannelList('Haber'),
             _buildChannelList('Çizgi Film'),
             _buildChannelList('Belgesel'),
+            _buildChannelList('Müzik'),
             _buildChannelList('Ekonomi'),
 
           ],
@@ -55,7 +56,7 @@ class HomeScreen extends StatelessWidget {
         SizedBox(
           height: 200,
           child: ListView.builder(
-            itemCount: channelsByCategory.isNotEmpty ? (channelsByCategory.length >= 4 ? 4 : channelsByCategory.length) : 0,
+            itemCount: channelsByCategory.isNotEmpty ?  channelsByCategory.length : 0,
             scrollDirection: Axis.horizontal,
             physics: const BouncingScrollPhysics(),
             itemBuilder: (context, index) {
