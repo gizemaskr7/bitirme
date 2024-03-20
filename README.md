@@ -1,6 +1,6 @@
-# bitirme
+# Canlı TV İzleme
 
-A new Flutter project.
+![Screenshot_1710707069 (1)](https://github.com/gizemaskr7/bitirme/assets/101512095/0f8c33b9-8647-4295-9286-bbfd153e5387)
 
 ## Getting Started
 
