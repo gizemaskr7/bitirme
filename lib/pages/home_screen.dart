@@ -19,13 +19,11 @@ class HomeScreen extends StatelessWidget {
         child: Column(
           children: [
             _buildChannelList('Genel'),
-            _buildChannelList('Spor'),
             _buildChannelList('Haber'),
             _buildChannelList('Çizgi Film'),
             _buildChannelList('Belgesel'),
+            _buildChannelList('Spor'),
             _buildChannelList('Müzik'),
-            _buildChannelList('Ekonomi'),
-
           ],
         ),
       ),
